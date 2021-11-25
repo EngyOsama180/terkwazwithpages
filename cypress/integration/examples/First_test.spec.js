@@ -13,9 +13,9 @@ describe('First Test Google search ', () => {
        firstpage.filldata();
     });
   
-    it('check third result is What is the WebDriver in selenium? ', () => {
-      let x=  cy.get('.wWOJcd');
-      x.eq(0).should('have.text',"What is the WebDriver in selenium?");
+     it('check third result is What is the WebDriver in selenium? ', () => {
+     let x=  cy.get('.wWOJcd');
+     x.eq(0).contains("What is the WebDriver in selenium?");
     });
     
   });
